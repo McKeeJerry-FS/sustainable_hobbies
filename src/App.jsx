@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import Navbar from '../components/navbar';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -11,17 +9,12 @@ function App() {
     <>
       <Navbar />
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        {/* Placeholder for Branding Images */}
       </div>
-      <h1>Garden Glow</h1>
-      <h3>Track Your Sustainable Hobbies Easier and Quicker with this App!</h3>
+      <h1 className='text-center display-3'>Garden Glow</h1>
+      <h3 className='text-center display-5'>Track Your Sustainable Hobbies Easier and Quicker with this App!</h3>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button className='btn btn-primary btn-sm' onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
